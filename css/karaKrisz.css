@@ -1,0 +1,262 @@
+.bc-red {
+    background: rgba(241, 7, 7, 0.78);
+}
+
+.c-white {
+    color: white;
+}
+
+.c-red {
+    color: red;
+}
+
+.pc-pt-20 {
+    padding-top: 20px;
+}
+
+.pc-pt-50 {
+    padding-top: 50px;
+}
+
+.pc-pt-150 {
+    padding-top: 150px;
+}
+
+.pc-pt-200 {
+    padding-top: 200px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+
+/* Flash class and keyframe animation */
+.flashit {
+    -webkit-animation: flash linear 1s infinite;
+    animation: flash linear 1s infinite;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Pulse class and keyframe animation */
+
+.shop-name {
+    position: relative;
+    top: 0.5em;
+    left: 5px;
+    color: white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.route-plan {
+    width: 215px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    background-color: white;
+    color: #f50206;
+    margin-top: 30px;
+    margin-left: 5px;
+    padding: 10px 20px;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.fixed-nav-on-scroll {
+    border: 2px solid #f50206;
+    border-right: 0;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.carousel-shop-arrow {
+    font-size: 40px;
+    position: relative;
+    top: 0.7em;
+}
+
+.carousel-shop-name {
+    background-color: white;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.owl-carousel .owl-item img {
+    max-width: 100px;
+}
+
+.slide-arrow {
+    position: absolute;
+    top: 50%;
+    bottom: 300px;
+}
+
+.prev-arrow {
+    left: -40px;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 15px solid #f50206;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.next-arrow {
+    right: -40px;
+    width: 0;
+    height: 0;
+    border-right: 0 solid transparent;
+    border-left: 15px solid #f50206;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #f50206;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-shop-phone {
+    position: relative;
+    bottom: 30px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 991px) {
+    .shop-name {
+        left: 0;
+        top: 0.5em;
+    }
+
+    .route-plan {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .pc-pt-200 {
+        padding-top: 0;
+    }
+
+    .mobile-view-img-hide {
+        display: none;
+    }
+
+    .shop-name {
+        left: 0;
+        top: 0.5em;
+    }
+
+    .route-plan {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .columns {
+        width: 100%;
+    }
+
+    .carousel-shop-name {
+        background-color: white;
+        width: 80%;
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .img-holder {
+        padding: 0 38px;
+    }
+
+    .owl-carousel .owl-item img {
+        max-width: 100%;
+    }
+
+}
